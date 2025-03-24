@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Objective:
+The goal of this project is to build a Calculator App using HTML, CSS, and JavaScript.
+The application should allow users to perform basic arithmetic operations like addition, 
+subtraction, multiplication, and division.
+
+Use Cases:
+1. Users can input numbers using digit buttons (0-9)
+2. Users can perform basic arithmetic operations (addition, subtraction, multiplication, division)
+3. Users can clear the calculator display and reset calculations
+4. Users can compute results using the equals button
+
+Requirements:
+1. Create a basic HTML layout with the following elements:
+   - A display screen to show the current input and result
+   - Buttons for each digit (0-9)
+   - Buttons for each operation (addition, subtraction, multiplication, division)
+   - A clear button to reset the calculator
+   - An equals button to compute the result
+2. Implement functionality with JavaScript to:
+   - Handle digit button clicks to update the display
+   - Handle operation button clicks to update the operation
+   - Handle the equals button to compute the result
+   - Handle the clear button to reset the calculator
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculator App</h1>
+        <div class="calculator">
+            <div class="display">
+                <div id="previous-operand"></div>
+                <div id="current-operand">0</div>
+            </div>
+            <div class="buttons">
+                <button class="clear" data-all-clear>AC</button>
+                <button class="delete" data-delete>DEL</button>
+                <button class="operator" data-operation>÷</button>
+                <button class="operator" data-operation>×</button>
+                
+                <button class="number" data-number>7</button>
+                <button class="number" data-number>8</button>
+                <button class="number" data-number>9</button>
+                <button class="operator" data-operation>-</button>
+                
+                <button class="number" data-number>4</button>
+                <button class="number" data-number>5</button>
+                <button class="number" data-number>6</button>
+                <button class="operator" data-operation>+</button>
+                
+                <button class="number" data-number>1</button>
+                <button class="number" data-number>2</button>
+                <button class="number" data-number>3</button>
+                <button class="equals" data-equals>=</button>
+                
+                <button class="number zero" data-number>0</button>
+                <button class="number" data-number>.</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+
